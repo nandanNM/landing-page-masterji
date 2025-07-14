@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="landing-page">
+        <div class="nav">
+          <div class="logo">
+            <img src="images/logo.png" alt="WIX" />
+          </div>
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-menu">
+            <a href="#">home</a>
+            <a href="#">Product</a><a href="#">Pricing Plans</a>
+            <a href="#">Contact</a>
+            <a href="#">Log in</a>
+            <button>Get Started</button>
+          </div>
+        </div>
+        <div class="lending">
+          <div class="landing-info">
+            <div class="info">
+              <h1>Communicate.</h1>
+              <h1>Collaborate. Create.</h1>
+              <h3>
+                WeDu provides an effective and powerful <br />
+                way to manage your projects
+              </h3>
+              <button>Get Started</button>
+            </div>
+          </div>
+          <div class="landing-img">
+            <img src="images/land.png" alt="LENDING IMG" />
+          </div>
+        </div>
+      </div>
+      <div class="card-page"></div>
+    </div>
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        navToggle.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
